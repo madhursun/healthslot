@@ -33,23 +33,31 @@ const doctorlist = async (req, res) => {
 const logindoctor = async (req, res) => {
   try {
     const { email, password } = req.body;
+
     const doctor = await DocModel.findOne({ email });
     if (!doctor) {
       return res
         .status(200)
         .json({ success: false, message: "Doctor not found" });
     }
+
     const ismatch = await bcrypt.compare(password, doctor.password);
+
     if (!ismatch) {
-      const token = jwt.sign({ id: doctor._id }, process.env.JWT_SECRET);
-      return res
-        .status(200)
-        .json({ success: true, message: "Login Successful", token });
-    } else {
       return res
         .status(200)
         .json({ success: false, message: "Invalid Password" });
     }
+
+    const token = jwt.sign({ id: doctor._id }, process.env.JWT_SECRET, {
+      expiresIn: "7d",
+    });
+
+    return res.status(200).json({
+      success: true,
+      message: "Login Successful",
+      token,
+    });
   } catch (err) {
     res.status(500).json({ success: false, message: err.message });
   }
