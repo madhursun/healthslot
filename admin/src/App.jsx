@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/sidebar";
 
 /* Pages */
-import Login from "./pages/login";
+import Login from "./pages/Login";
 
 /* Admin Pages */
 import Dash from "./pages/Admin/Dash";
