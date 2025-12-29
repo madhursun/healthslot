@@ -54,6 +54,28 @@ const Login = () => {
       <p className="text-3xl font-semibold text-center text-teal-700 mb-6">
         <span className="text-teal-500">{state}</span> Login
       </p>
+      {/* Demo Credentials */}
+      <div className="mb-5 p-3 bg-teal-50 border border-teal-200 rounded-xl text-sm text-teal-700">
+        <p className="font-semibold mb-1">Demo Login Credentials</p>
+
+        <p>
+          <span className="font-medium">Admin Email:</span>{" "}
+          admin@healthslot.demo
+        </p>
+        <p>
+          <span className="font-medium">Admin Password:</span> Admin@123
+        </p>
+
+        <hr className="my-2 border-teal-200" />
+
+        <p>
+          <span className="font-medium">Doctor Email:</span>{" "}
+          doctor@healthslot.demo
+        </p>
+        <p>
+          <span className="font-medium">Doctor Password:</span> Doctor@123
+        </p>
+      </div>
 
       {/* Email */}
       <div className="mb-5">
