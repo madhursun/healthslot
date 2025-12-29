@@ -63,7 +63,9 @@ const Navbar = () => {
           CONTACT
         </NavLink>
         <li
-          onClick={() => (window.location.href = "http://localhost:5174")}
+          onClick={() =>
+            (window.location.href = import.meta.env.VITE_BACKEND_URL)
+          }
           className={linkClass}
         >
           ADMIN PANEL
