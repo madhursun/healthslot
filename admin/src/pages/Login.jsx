@@ -59,21 +59,27 @@ const Login = () => {
         <p className="font-semibold mb-1">Demo Login Credentials</p>
 
         <p>
-          <span className="font-medium">Admin Email:</span>{" "}
-          admin@healthslot.demo
+          <span className="font-medium">Admin Email:</span> dummy@gmail.com
         </p>
         <p>
-          <span className="font-medium">Admin Password:</span> Admin@123
+          <span className="font-medium">Admin Password:</span> dummy1234
         </p>
 
         <hr className="my-2 border-teal-200" />
 
         <p>
           <span className="font-medium">Doctor Email:</span>{" "}
-          doctor@healthslot.demo
+          doctorname@healthslot.com
         </p>
         <p>
-          <span className="font-medium">Doctor Password:</span> Doctor@123
+          <span className="font-medium">Doctor Password:</span> doctorname1234
+        </p>
+        <p>
+          <span className="font-medium">Doctor Email:</span>{" "}
+          richard@healthslot.com
+        </p>
+        <p>
+          <span className="font-medium">Doctor Password:</span> richard1234
         </p>
       </div>
 
