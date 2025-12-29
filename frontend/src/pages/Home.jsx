@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Speacialitymenu from "../components/Speacialitymenu";
-import Topdoc from "../components/topdoc";
+import Topdoc from "../components/Topdoc";
 import Banner from "../components/Banner";
 
 const Home = () => {
