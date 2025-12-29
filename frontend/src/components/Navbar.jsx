@@ -64,7 +64,7 @@ const Navbar = () => {
         </NavLink>
         <li
           onClick={() =>
-            (window.location.href = import.meta.env.VITE_BACKEND_URL)
+            (window.location.href = import.meta.env.VITE_ADMIN_URL)
           }
           className={linkClass}
         >
