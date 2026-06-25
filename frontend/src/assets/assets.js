@@ -39,7 +39,7 @@ import Pediatricians from "./Pediatricians.svg";
 import logoproject1 from "./logoproject1.png";
 
 export const assets = {
-  logoproject,
+  logoproject1,
   appointment_img,
   header_img,
   group_profiles,
