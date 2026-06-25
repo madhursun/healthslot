@@ -121,7 +121,7 @@ const Navbar = () => {
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-gray-300">
-              <img src={assets.logoproject} alt="Logo" className="w-32" />
+              <img src={assets.logoproject1} alt="Logo" className="w-32" />
               <img
                 onClick={() => setShowMenu(false)}
                 src={assets.cross_icon}
