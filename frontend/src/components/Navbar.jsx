@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between py-4 px-6 mb-0 border-b border-gray-300 shadow-sm bg-white sticky top-0 z-50">
       <NavLink to="/">
-        <img src={assets.logoproject} alt="logo" className="w-36" />
+        <img src={assets.logoproject1} alt="logo" className="w-36" />
       </NavLink>
       <ul className="hidden md:flex items-center gap-6 text-sm">
         <NavLink
