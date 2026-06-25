@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 mb-8">
         {/* Left Section */}
         <div className="flex-[3] space-y-4">
-          <img src={assets.logoproject} alt="" className="w-32" />
+          <img src={assets.logoproject1} alt="" className="w-32" />
           <p className="text-gray-500 text-sm md:text-base">
             HealthSlot is your trusted platform for booking appointments with
             top doctors. We connect you with experienced healthcare
@@ -29,7 +29,7 @@ const Footer = () => {
                 >
                   {item}
                 </li>
-              )
+              ),
             )}
           </ul>
         </div>
